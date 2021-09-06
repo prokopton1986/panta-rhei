@@ -16,5 +16,13 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}" />
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
-  <script src="{{ site.baseurl }}/js/custom.js"></script>
+  <script>
+
+    var hour = new Date().getHours()
+    var isNight = hour < 6 || hour > 19
+    if (isNight) {
+      var html = document.getElementsByTagName('html')[0]
+      html.classList.add('dark-appearance')
+    }
+   </script> 
 </head>
