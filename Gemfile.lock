@@ -72,6 +72,7 @@ PLATFORMS
   x86_64-darwin-19
 
 DEPENDENCIES
+  jekyll
   kramdown-parser-gfm
   no-style-please!
   webrick
